@@ -1,0 +1,48 @@
+\documentclass[12pt]{amsart}
+\usepackage[left=2.5cm,right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{verbatim}
+\usepackage{color}
+\title{Inferring gene trees from species trees}
+\author{}
+\date{\today}
+
+\DeclareMathOperator{\R}{\mathbb{R}}
+\DeclareMathOperator{\Var}{\mathsf{Var}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\TP}{\mathbb{TP}}
+\DeclareMathOperator{\E}{\mathbb{E}}
+\DeclareMathOperator{\N}{\mathbb{N}}
+
+  \theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+  \theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{remark}[theorem]{Remark}
+
+\begin{document}
+\begin{abstract}
+We consider statistical estimation problems for variants of the problem of Allman et al on inferring species trees from gene trees from the viewpoint of tropical geometry. 
+\end{abstract}
+
+\maketitle
+
+\section{Overview}
+
+The multispecies coalescent model (MSC) setup in \cite{Allman1,Allman2}  is well-studied, from both the theoretical and algorithmic perspective. For a review, see refs/reviewMSCestimation.pdf (Challenges in Species Tree Estimation Under the
+Multispecies Coalescent Model, Xu and Yang). In particular, some statistics we chatted about (min pairwise coalescent times etc) have been discussed in this literature (see, for example, the section titled `Methods that use gene tree branch lengths').
+Song et al (refs/song2012.pdf) applied the MSC model to data, and there are some controversies on the analysis as well as the model assumptions (refs/songReview1.pdf, refs/songReview2.pdf). 
+ Thus, it is important to focus on how the tropical view can be helpful. 
+\vskip12pt
+
+
+\bibliographystyle{plain}
+\bibliography{trees}
+
+\end{document}
